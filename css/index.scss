@@ -13,12 +13,22 @@ body {
 
 .page-heading {
 	display: flex;
-	justify-content: center;
 	margin-top: 60px;
 	margin-bottom: 60px;
+	flex-flow: column;
+	justify-content: center;
 
-	font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 60px;
+	h1, a {
+		display: flex;
+		justify-content: center;
+
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 60px;
+	}		
+	a {
+		margin-top: 15px;
+	}
 }
 
