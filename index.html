@@ -4,16 +4,16 @@ css_file: index
 ---
 <div class="home">
 	<div class="page-heading">
-
-	<h1>{{ site.title }}</h1>
-	<a class="twitter-link" href="https://twitter.com/wczekalski">@wczekalski</a>
+		<h1>{{ site.title }}</h1>
+		<div class="link-container">
+			<a class="link" href="https://twitter.com/{{ site.twitter_username }}">/   twitter   /</a>
+			<a class="link" href="https://github.com/{{ site.github_username }}">/   github   /</a>
+		</div>
 	</div>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
+	<ul class="post-list">
+		{% for post in site.posts %}
+		<li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 	
       </li>
