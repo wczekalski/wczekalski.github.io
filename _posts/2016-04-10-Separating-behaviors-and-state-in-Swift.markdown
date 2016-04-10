@@ -112,7 +112,7 @@ I learned to think about protocols as <span id="definition">*descriptions of act
 
 ---
 
-You can do many fun things with `Graph` data structure but I am not going to dive into it here. The whole micro library is available on [Github]()
+You can do many fun things with `Graph` data structure but I am not going to dive into it here. The whole micro library is available on [Github](https://github.com/wokalski/Graph.swift)
 
 You can find other interesting articles on protocols [here](http://alisoftware.github.io/swift/protocol/2015/11/08/mixins-over-inheritance/), [here](http://matthijshollemans.com/2015/07/22/mixins-and-traits-in-swift-2/), and [here](https://www.dzombak.com/blog/2015/06/Multiple-Inheritance-vs--Traits-or-Protocol-Extensions.html).
 
