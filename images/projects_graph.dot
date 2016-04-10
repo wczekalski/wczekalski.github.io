@@ -1,0 +1,10 @@
+digraph project {
+    graph [bgcolor=transparent, ratio="compress"];
+    node [shape=plaintext, fontcolor="#b58900", fontname=Helvetica];
+    edge [color="#2aa198"];
+    {rank=same B C};
+    A -> B;
+    A -> C;
+    B -> C;
+    C -> D;
+}
