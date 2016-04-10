@@ -1,6 +1,8 @@
 ---
 ---
 
+{% include color.css %}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
@@ -90,6 +92,14 @@ sub { top: 0.4em; }
 		font-style: italic;
 	}
 	
+    strong {
+        font-weight: bold;
+    }
+    
+    em {
+        font-style: italic;
+    }
+
 	p, li {
 		font-size: 16.8pt;
 		line-height: 1.4;
@@ -127,6 +137,33 @@ sub { top: 0.4em; }
 		margin-top: 40px;
 		border-top: 1px solid rgba(0, 0, 0, 0.1)
 	}
+    
+    pre, code {
+        font-family: monospace;
+    }
+    
+    a {
+        text-decoration: none;
+        &:link {
+            color: #156FFF;
+        }
+
+        &:visited {
+            color: #0E4DB5;
+        }
+    }
+
+    .highlight {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+
+        background-color: #F3F3F3;
+        border-radius: 10pt;
+        font-size: 12pt;
+        white-space: pre;
+        overflow: auto;
+    }
 }
 
 
