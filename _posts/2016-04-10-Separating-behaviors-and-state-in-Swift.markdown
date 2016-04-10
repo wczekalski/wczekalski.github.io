@@ -1,8 +1,10 @@
 ---
 layout: post
-title: How do I call this?
-date: '2016-04-08 10:49:00'
+title: Separating behaviors and state in Swift
+date: '2016-04-10 16:00:00'
 ---
+
+Modeling proper abstractions is hard, no matter which technology or paradigm we use. I find it easiest to structure pure functions but when state comes in it gets harder. I like to reason about state and its behaviors separately, no matter which technology I use. Swift provided me with a great tool to do that.
 
 Protocols are at the heart of Swift API design. However, I had a perception problem with this concept 😜. In my mind [*Protocol Oriented Programming*](https://developer.apple.com/videos/play/wwdc2015/408/)[^1] meant the possibility to generically extend types. Turns out, I was looking from the wrong angle.
 
