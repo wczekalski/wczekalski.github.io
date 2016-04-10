@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Separating behaviors and state in Swift
-date: '2016-04-10 16:00:00'
+date: '2016-04-10 10:00:00'
 ---
 
 Modeling proper abstractions is hard, no matter which technology or paradigm we use. I find it easiest to structure pure functions but when state comes in it gets harder. I like to reason about state and its behaviors separately, no matter which technology I use. Swift provided me with a great tool to do that.
