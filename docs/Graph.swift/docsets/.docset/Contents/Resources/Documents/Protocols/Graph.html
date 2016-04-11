@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Graph Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/Graph" class="dashAnchor"></a>
+    <a title="Graph Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (89% documented)</p>
+        <p class="header-right"><a href="http://github.com/wokalski/Graph.swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fwokalski%2Ecom%2Fdocs%2Fdocsets%2F%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Graph Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EdgeType.html">EdgeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeStatus.html">NodeStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Graph.html">Graph</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Node.html">Node</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:V5Graph4Edge">Edge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:V5Graph8NodeInfo">NodeInfo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Graph</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Graph</span></code></pre>
+
+                </div>
+              </div>
+            <p>Graph defines basic directed graph. Instances of conforming can leverage basic Graph algorithms defined in the extension.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP5Graph5Graph5nodesGSawx1T_"></a>
+                    <a name="//apple_ref/swift/Property/nodes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP5Graph5Graph5nodesGSawx1T_">nodes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Graph</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE5GraphPS_5Graph9isAcyclicFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/isAcyclic()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE5GraphPS_5Graph9isAcyclicFT_Sb">isAcyclic()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks whether a graph contains a cycle. A cycle means that there is a parent-child relation where child is also a predecessor of the parent.</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(N + E) where N is the number of all nodes, and E is the number of connections between them
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isAcyclic</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if doesn&rsquo;t contain a cycle</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE5GraphPS_5Graph15topologicalSortFT_GSqGSawx1T__"></a>
+                    <a name="//apple_ref/swift/Method/topologicalSort()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE5GraphPS_5Graph15topologicalSortFT_GSqGSawx1T__">topologicalSort()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Topological sort (<a href="https://en.wikipedia.org/wiki/Topological_sorting">Wikipedia link</a>) is an ordering of graph&rsquo;s nodes such that for every directed edge u-&gt;v, u comes before v in the ordering.</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(N + E) where N is the number of all nodes, and E is the number of connections between them
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">topologicalSort</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Ordered array of nodes or nil if it cannot be done (i.e. the graph contains cycles)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE5GraphPS_5Graph13breadthSearchFT9edgeFoundGSqFGVS_4Edgewx1T_Sb_17nodeStatusChangedGSqFGVS_8NodeInfowxS2__Sb__T_"></a>
+                    <a name="//apple_ref/swift/Method/breadthSearch(edgeFound:nodeStatusChanged:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE5GraphPS_5Graph13breadthSearchFT9edgeFoundGSqFGVS_4Edgewx1T_Sb_17nodeStatusChangedGSqFGVS_8NodeInfowxS2__Sb__T_">breadthSearch(edgeFound:nodeStatusChanged:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Breadth First Search (<a href="https://en.wikipedia.org/wiki/Breadth-first_search">Wikipedia link</a>)</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(N + E) where N is the number of all nodes, and E is the number of connections between them
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter edgeFound: Called whenever a new connection between nodes is discovered
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter nodeStatusChanged: Called when a node changes its status. It is called twice for every node
+
+</div>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Search will stop if <code>false</code> is returned from any closure.
+
+</div>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    It will only call <code>nodeStatusChanged:</code> on tree edges because we don&rsquo;t maintain entry and exit times of nodes. More information about entry and exit times <a href="https://courses.csail.mit.edu/6.006/fall11/rec/rec14.pdf">here</a>. It is very easy to implement them, but might have big influence on memory use.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">breadthSearch</span><span class="p">(</span><span class="n">edgeFound</span> <span class="nv">edgeFound</span><span class="p">:</span> <span class="p">(</span><span class="kt">Edge</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?,</span> <span class="nv">nodeStatusChanged</span><span class="p">:</span> <span class="p">(</span><span class="kt">NodeInfo</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>edgeFound</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called whenever a new connection between nodes is discovered</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nodeStatusChanged</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when a node changes its status. It is called twice for every node</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE5GraphPS_5Graph11depthSearchFT9edgeFoundGSqFGVS_4Edgewx1T_Sb_17nodeStatusChangedGSqFGVS_8NodeInfowxS2__Sb__T_"></a>
+                    <a name="//apple_ref/swift/Method/depthSearch(edgeFound:nodeStatusChanged:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE5GraphPS_5Graph11depthSearchFT9edgeFoundGSqFGVS_4Edgewx1T_Sb_17nodeStatusChangedGSqFGVS_8NodeInfowxS2__Sb__T_">depthSearch(edgeFound:nodeStatusChanged:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Depth First Search (<a href="https://en.wikipedia.org/wiki/Depth-first_search">Wikipedia link</a>)</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(N + E) where N is the number of all nodes, and E is the number of connections between them
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter edgeFound: Called whenever a new connection between nodes is discovered
+
+</div>
+
+<div class="aside aside-parameter">
+    <p class="aside-title">Parameter</p>
+    Parameter nodeStatusChanged: Called when a node changes its status. It is called twice for every node
+
+</div>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Search will stop if <code>false</code> is returned from any closure.
+
+</div>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This function makes recursive calls. Keep it in mind when operating on big data sets.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">depthSearch</span><span class="p">(</span><span class="n">edgeFound</span> <span class="nv">edgeFound</span><span class="p">:</span> <span class="p">(</span><span class="kt">Edge</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?,</span> <span class="nv">nodeStatusChanged</span><span class="p">:</span> <span class="p">(</span><span class="kt">NodeInfo</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>edgeFound</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called whenever a new connection between nodes is discovered</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nodeStatusChanged</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called when a node changes its status. It is called twice for every node</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="http://wokalski.com" target="_blank" rel="external">wokalski</a>. All rights reserved. (Last updated: 2016-04-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
