@@ -1,3 +1,10 @@
+---
+layout: post
+title: "No TItle YET"
+date: 2017-02-18 00:00:00
+draft: true
+---
+
 # No title yet
 
 This weekend I built a simple Mac app for myself. It consists of one table view with two types of cells. To give you an idea - it is so simple that I didn't get angry at 'AppKit' even once.
