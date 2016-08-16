@@ -90,6 +90,11 @@ sub { top: 0.4em; }
 		margin-bottom: 40px;
 		border-left: 0.25em solid #e5e4e1;
 		font-style: italic;
+
+        p {
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+        }
 	}
 	
     strong {
@@ -163,6 +168,19 @@ sub { top: 0.4em; }
         font-size: 12pt;
         white-space: pre;
         overflow: auto;
+    }
+    
+    table, th, td {
+        border: 1px solid #e5e4e1;
+        font-size: 14pt;        
+    }
+    
+    th {
+        padding: 1em;
+    }
+
+    td {
+        padding: 0.5em;
     }
 }
 
