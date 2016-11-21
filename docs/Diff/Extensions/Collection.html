@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Collection Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Collection" class="dashAnchor"></a>
+    <a title="Collection Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Diff Docs</a> (60% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Diff Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Collection Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ExtendedPatch.html">ExtendedPatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Patch.html">Patch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F4Diffoi2eeFTVS_5PointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F4Diff13extendedPatchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox4sortGSqFTOVS_12ExtendedDiff7ElementS5__Sb__GSaGOS_13ExtendedPatchWxS1_S2____">extendedPatch(from:to:sort:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F4Diff5patchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox_GSaGOS_5PatchWxS1_S2____">patch(from:to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F4Diff5patchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox4sortFTOVS_4Diff7ElementS5__Sb_GSaGOS_5PatchWxS1_S2____">patch(from:to:sort:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DiffProtocol.html">DiffProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Diff.html">Diff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Diff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExtendedDiff.html">ExtendedDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExtendedDiff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Point.html">Point</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Trace.html">Trace</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Collection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">Collection</span> <span class="p">:</span> <span class="kt">Indexable</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_12extendedDiffFxVS_12ExtendedDiff"></a>
+                    <a name="//apple_ref/swift/Method/extendedDiff(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_12extendedDiffFxVS_12ExtendedDiff">extendedDiff(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an extended diff between the calee and <code>other</code> collection</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O((N+M)*D). There&rsquo;s additional cost of O(D^2) to compute the moves.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">extendedDiff</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the calee to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>ExtendedDiff between the calee and <code>other</code> collection</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_10firstMatchFTVS_4Diff12dirtyIndicesGVs3SetSi_9candidateOS4_7Element14candidateIndexSi5otherx_GSqTOVS_12ExtendedDiff7ElementSi__"></a>
+                    <a name="//apple_ref/swift/Method/firstMatch(_:dirtyIndices:candidate:candidateIndex:other:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_10firstMatchFTVS_4Diff12dirtyIndicesGVs3SetSi_9candidateOS4_7Element14candidateIndexSi5otherx_GSqTOVS_12ExtendedDiff7ElementSi__">firstMatch(_:dirtyIndices:candidate:candidateIndex:other:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">Collection</span> <span class="p">:</span> <span class="kt">Indexable</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_11createMatchFTOVS_4Diff7Element5matchS5_5otherx_GSqOVS_12ExtendedDiff7Element_"></a>
+                    <a name="//apple_ref/swift/Method/createMatch(_:match:other:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_11createMatchFTOVS_4Diff7Element5matchS5_5otherx_GSqOVS_12ExtendedDiff7Element_">createMatch(_:match:other:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">Collection</span> <span class="p">:</span> <span class="kt">Indexable</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_16itemOnStartIndexFT10advancedBySi_WxS1_S2__"></a>
+                    <a name="//apple_ref/swift/Method/itemOnStartIndex(advancedBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_16itemOnStartIndexFT10advancedBySi_WxS1_S2__">itemOnStartIndex(advancedBy:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">Collection</span> <span class="p">:</span> <span class="kt">Indexable</span><span class="p">,</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_4diffFxVS_4Diff"></a>
+                    <a name="//apple_ref/swift/Method/diff(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_4diffFxVS_4Diff">diff(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a diff between the calee and <code>other</code> collection</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O((N+M)*D)
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diff</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the calee to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Diff between the calee and <code>other</code> collection</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_10diffTracesFT2tox_GSaVS_5Trace_"></a>
+                    <a name="//apple_ref/swift/Method/diffTraces(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe4DiffRxs10CollectionWx8Iterator7Element_s9EquatablerS0_10diffTracesFT2tox_GSaVS_5Trace_">diffTraces(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates all traces required to create an output diff. See the <a href="http://www.xmailserver.org/diff2.pdf">paper</a> for more information on traces.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diffTraces</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Trace.html">Trace</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>to</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>other collection</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>all traces required to create an output diff</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/wokalski/Diff.swift" target="_blank" rel="external">Wojtek Czekalski</a>. All rights reserved. (Last updated: 2016-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

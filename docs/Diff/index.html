@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Diff  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Diff  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Diff Docs</a> (60% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Diff Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Diff  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ExtendedPatch.html">ExtendedPatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Patch.html">Patch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F4Diffoi2eeFTVS_5PointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F4Diff13extendedPatchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox4sortGSqFTOVS_12ExtendedDiff7ElementS5__Sb__GSaGOS_13ExtendedPatchWxS1_S2____">extendedPatch(from:to:sort:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F4Diff5patchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox_GSaGOS_5PatchWxS1_S2____">patch(from:to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F4Diff5patchuRxs10CollectionWx8Iterator7Element_s9EquatablerFT4fromx2tox4sortFTOVS_4Diff7ElementS5__Sb_GSaGOS_5PatchWxS1_S2____">patch(from:to:sort:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DiffProtocol.html">DiffProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Diff.html">Diff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Diff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ExtendedDiff.html">ExtendedDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ExtendedDiff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Point.html">Point</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Trace.html">Trace</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><a href="https://travis-ci.org/wokalski/Diff.swift"><img src="https://travis-ci.org/wokalski/Diff.swift.svg?branch=master" alt="Build Status"></a></p>
+<a href='#diff-swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='diff-swift'>Diff.swift</h1>
+
+<p>This library generates differences between any two <code>Collection</code>s (and Strings). It uses a <a href="http://www.xmailserver.org/diff2.pdf">fast algorithm</a> <code>(O((N+M)*D))</code>.</p>
+<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+
+<ul>
+<li><code>Diff.swift</code> supports three types of operations:
+
+<ul>
+<li>Insertions</li>
+<li>Deletions</li>
+<li>Moves (use <code>ExtendedDiff</code>)</li>
+</ul></li>
+<li>Arbitrary sorting of the <code>Patch</code></li>
+<li>Utilities for <code>UITableView</code> and <code>UICollectionView</code> (if that&rsquo;s just what you want, <a href="#how-to-use">skip to examples</a>)</li>
+<li>⚡️ <a href="#performance-notes">fast</a></li>
+</ul>
+<a href='#why-would-i-need-it' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='why-would-i-need-it'>Why would I need it?</h2>
+
+<p>There&rsquo;s more to diffs than performing <code>UITableView</code> animations easily.</p>
+
+<p>Wherever you have code which propagates <code>added</code>/<code>removed</code>/<code>moved</code> callbacks from your model to the UI it&rsquo;s good to consider using a diffing library instead. What you get is clear separation and more declarative approach. The model just performs state transition and the UI code performs appropriate UI actions based on the diff output.</p>
+<a href='#diff-vs-patch-sorting' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='diff-vs-patch-sorting'>Diff vs Patch (Sorting)</h2>
+
+<p>Let&rsquo;s consider a simple example of a patch to transform string <code>&quot;a&quot;</code> into <code>&quot;b&quot;</code>.</p>
+
+<ol>
+<li>Delete item at index 0 (we get <code>&quot;&quot;</code>)</li>
+<li>Insert <code>b</code> at index 0 (we get <code>&quot;b&quot;</code>)</li>
+</ol>
+
+<p>If we want to perform these operations in different order, simple reordering of the steps doesn&rsquo;t work.</p>
+
+<ol>
+<li>Insert <code>b</code> at index 0 (we get <code>&quot;ba&quot;</code>)</li>
+<li>Delete item at index 0 (we get <code>&quot;a&quot;</code>)</li>
+</ol>
+
+<p>&hellip; ooooops</p>
+
+<p>We need to shift insertions and deletions so that we get this:</p>
+
+<ol>
+<li>Insert <code>b</code> at index 1 (we get <code>&quot;ab&quot;</code></li>
+<li>Delete item at index 0 (we get <code>&quot;b&quot;</code>)</li>
+</ol>
+<a href='#solution' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='solution'>Solution</h3>
+
+<p>In order to mitigate this issue there are two types of output:</p>
+
+<ul>
+<li><em>Diff</em>
+
+<ul>
+<li>A sequence of deletions, insertions, and moves (if using <code>ExtendedDiff</code>) where deletions point to locations of an item to be deleted in the source and insertions point to the items in the output. <code>Diff.swift</code> produces just one <code>Diff</code>.</li>
+</ul></li>
+<li><em>Patch</em>
+
+<ul>
+<li>An <em>ordered sequence</em> of steps to be applied to obtain the second sequence from the first one. It is based on a <code>Diff</code> but can be arbitrarly sorted.</li>
+</ul></li>
+</ul>
+<a href='#sorting-in-practice' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='sorting-in-practice'>Sorting in practice</h3>
+
+<p>In practice it means that a diff to transform string <code>&quot;1234&quot;</code> to <code>&quot;1&quot;</code> is <code>&quot;D(1)D(2)D(3)&quot;</code> the default patch is <code>&quot;D(1)D(1)D(1)&quot;</code>. However, if we decide to sort it so that deletions and bigger indices happen first we get this patch: <code>&quot;D(3)D(2)D(1)&quot;</code>.</p>
+<a href='#how-to-use' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='how-to-use'>How to use</h2>
+<a href='#code-uitableview-code-code-uicollectionview-code' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='code-uitableview-code-code-uicollectionview-code'><code>UITableView</code>/<code>UICollectionView</code></h3>
+<pre class="highlight swift"><code>
+<span class="c1">// It will automatically animate deletions, insertions, and moves</span>
+<span class="n">tableView</span><span class="o">.</span><span class="nf">animateRowChanges</span><span class="p">(</span>
+            <span class="nv">oldData</span><span class="p">:</span> <span class="n">old</span><span class="p">,</span>
+            <span class="nv">newData</span><span class="p">:</span> <span class="k">new</span><span class="p">)</span>
+
+<span class="n">collectionView</span><span class="o">.</span><span class="nf">animateItemChanges</span><span class="p">(</span>
+    <span class="nv">oldData</span><span class="p">:</span> <span class="n">old</span><span class="p">,</span>
+    <span class="nv">newData</span><span class="p">:</span> <span class="k">new</span><span class="p">)</span> 
+
+</code></pre>
+
+<p>See <a href="/Examples/">examples</a> for a working example.</p>
+<a href='#using-patch-and-diff' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='using-patch-and-diff'>Using Patch and Diff</h3>
+
+<p>When you want to get steps to transform one sequence into another (e.g. you want to animate UI according to the changes in the model)</p>
+<pre class="highlight swift"><code>
+<span class="k">let</span> <span class="nv">from</span><span class="p">:</span> <span class="kt">T</span>
+<span class="k">let</span> <span class="nv">to</span><span class="p">:</span> <span class="kt">T</span>
+
+<span class="c1">// only insertions and deletions</span>
+<span class="c1">// Returns [Patch&lt;T.Iterator.Element&gt;]</span>
+<span class="k">let</span> <span class="nv">patch</span> <span class="o">=</span> <span class="nf">patch</span><span class="p">(</span>
+                <span class="nv">from</span><span class="p">:</span> <span class="n">from</span><span class="p">,</span>
+                <span class="nv">to</span><span class="p">:</span> <span class="n">to</span>
+            <span class="p">)</span>
+
+<span class="c1">// Patch + moves</span>
+<span class="c1">// Returns [ExtendedPatch&lt;T.Iterator.Element&gt;]</span>
+<span class="k">let</span> <span class="nv">patch</span> <span class="o">=</span> <span class="nf">extendedPatch</span><span class="p">(</span>
+                <span class="nv">from</span><span class="p">:</span> <span class="n">from</span><span class="p">,</span>
+                <span class="nv">to</span><span class="p">:</span> <span class="n">to</span>
+            <span class="p">)</span>
+</code></pre>
+
+<p>When you need additional control over ordering</p>
+<pre class="highlight swift"><code>
+<span class="k">let</span> <span class="nv">insertionsFirst</span> <span class="o">=</span> <span class="p">{</span> <span class="n">fst</span><span class="p">,</span> <span class="n">snd</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">in</span> 
+    <span class="k">switch</span> <span class="p">(</span><span class="n">element1</span><span class="p">,</span> <span class="n">element2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="p">(</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="k">let</span> <span class="nv">at1</span><span class="p">),</span> <span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="k">let</span> <span class="nv">at2</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">at1</span> <span class="o">&lt;</span> <span class="n">at2</span>
+    <span class="k">case</span> <span class="p">(</span><span class="o">.</span><span class="n">insert</span><span class="p">,</span> <span class="o">.</span><span class="n">delete</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="k">case</span> <span class="p">(</span><span class="o">.</span><span class="n">delete</span><span class="p">,</span> <span class="o">.</span><span class="n">insert</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">false</span>
+    <span class="k">case</span> <span class="p">(</span><span class="o">.</span><span class="nf">delete</span><span class="p">(</span><span class="k">let</span> <span class="nv">at1</span><span class="p">),</span> <span class="o">.</span><span class="nf">delete</span><span class="p">(</span><span class="k">let</span> <span class="nv">at2</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">at1</span> <span class="o">&lt;</span> <span class="n">at2</span>
+    <span class="k">default</span><span class="p">:</span> <span class="nf">fatalError</span><span class="p">()</span> <span class="c1">// unreachable</span>
+    <span class="p">}</span>    
+<span class="p">}</span>
+
+<span class="c1">// Results in a [Patch] with insertions preceeding deletions</span>
+<span class="k">let</span> <span class="nv">patch</span> <span class="o">=</span> <span class="nf">patch</span><span class="p">(</span>
+                <span class="nv">from</span><span class="p">:</span> <span class="n">from</span><span class="p">,</span>
+                <span class="nv">to</span><span class="p">:</span> <span class="n">to</span><span class="p">,</span>
+                <span class="nv">sort</span><span class="p">:</span> <span class="n">insertionsFirst</span>
+            <span class="p">)</span>
+</code></pre>
+
+<p>More advanced - you want to calculate diff first and generate patch. In certain cases it&rsquo;s a good performance improvement. Generating a sorted patch takes O(D^2) time. The default order takes <code>O(D)</code> to generate. <code>D</code> is the length of a diff.</p>
+<pre class="highlight swift"><code>
+<span class="c1">// Generate diff first</span>
+<span class="k">let</span> <span class="nv">diff</span> <span class="o">=</span> <span class="n">from</span><span class="o">.</span><span class="nf">diff</span><span class="p">(</span><span class="n">to</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">patch</span> <span class="o">=</span> <span class="n">diff</span><span class="o">.</span><span class="nf">patch</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">from</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">to</span><span class="p">)</span>
+</code></pre>
+<a href='#performance-notes' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='performance-notes'>Performance notes</h2>
+
+<p>This library is fast. Most other libraries use a simple <code>O(n*m)</code> algorithm which allocates a 2 dimensional array and goes through all elements. It takes <em>a lot</em> of memory. In the benchmark it is an order of magnitude difference. </p>
+
+<p>Source code is available <a href="https://github.com/wokalski/Diff.swift/blob/master/PerfTests/Utils/PerformanceTestUtils.swift">here</a>. The result of a measurement is mean diff time in seconds over 10 runs on an iPhone 6.</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th>Diff.swift</th>
+<th>Dwifft</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>same</td>
+<td>0.0555</td>
+<td>19.8632</td>
+</tr>
+<tr>
+<td>created</td>
+<td>0.0511</td>
+<td>2.4461</td>
+</tr>
+<tr>
+<td>deleted</td>
+<td>0.0502</td>
+<td>2.4260</td>
+</tr>
+<tr>
+<td>diff</td>
+<td>0.2807</td>
+<td>21.9684</td>
+</tr>
+</tbody></table>
+
+<p>This algorithm works great for collections with <em>small</em> diffs. I mean, even for big diffs, it&rsquo;s still better than the simple algorithm. 
+However, if you need good performance and you have big differences between the inputs consider another diffing algorithm. Look at Hunt &amp; Szymanski&rsquo;s and/or Hirschberg&rsquo;s work.</p>
+<a href='#get-in-touch' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='get-in-touch'>Get in touch</h2>
+
+<p>If you have any questions, you can find me on <a href="https://twitter.com/wokalski">Twitter</a>.</p>
+<a href='#misc' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='misc'>Misc</h2>
+
+<p>If you want to learn how it works <code>Graph.playground</code> is a good place to start.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/wokalski/Diff.swift" target="_blank" rel="external">Wojtek Czekalski</a>. All rights reserved. (Last updated: 2016-11-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
