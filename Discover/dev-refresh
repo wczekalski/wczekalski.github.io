@@ -1,0 +1,9 @@
+#!/bin/bash
+
+fswatch -0 ./index.html ./style.css | xargs -0 -n1 -I{} osascript -e '    tell application "Safari"
+    set docUrl to URL of document 1
+
+    set URL of document 1 to docUrl
+end tell
+'
+
