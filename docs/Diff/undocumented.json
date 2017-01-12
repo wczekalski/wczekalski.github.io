@@ -16,100 +16,107 @@
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 7,
+      "line": 6,
       "symbol": "DiffProtocol.elements",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 20,
+      "line": 19,
       "symbol": "Diff.Element",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 21,
+      "line": 20,
       "symbol": "Diff.Element.insert",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 22,
+      "line": 21,
       "symbol": "Diff.Element.delete",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 39,
+      "line": 38,
       "symbol": "Diff.init(trace:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 60,
+      "line": 59,
       "symbol": "Point",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 61,
+      "line": 60,
       "symbol": "Point.x",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 62,
+      "line": 61,
       "symbol": "Point.y",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 67,
+      "line": 66,
       "symbol": "==(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 74,
+      "line": 72,
       "symbol": "Trace.from",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 75,
+      "line": 73,
       "symbol": "Trace.to",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 76,
+      "line": 74,
       "symbol": "Trace.D",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 323,
+      "line": 371,
       "symbol": "DiffProtocol.startIndex",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
-      "line": 327,
+      "line": 375,
       "symbol": "DiffProtocol.endIndex",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/Diff.swift",
+      "line": 385,
+      "symbol": "Diff.init(traces:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -142,22 +149,22 @@
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/ExtendedDiff.swift",
-      "line": 128,
-      "symbol": "Collection.firstMatch(_:dirtyIndices:candidate:candidateIndex:other:)",
+      "line": 123,
+      "symbol": "Collection.firstMatch(_:dirtyIndices:candidate:candidateIndex:other:isEqual:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/ExtendedDiff.swift",
-      "line": 145,
-      "symbol": "Collection.createMatch(_:match:other:)",
+      "line": 142,
+      "symbol": "Collection.createMatch(_:match:other:isEqual:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/ExtendedDiff.swift",
-      "line": 160,
-      "symbol": "Collection.itemOnStartIndex(advancedBy:)",
+      "line": 159,
+      "symbol": "Collection.extendedDiff(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -194,6 +201,90 @@
       "line": 31,
       "symbol": "ExtendedPatch.move",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": null,
+      "symbol": "NestedDiff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 2,
+      "symbol": "NestedDiff",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 4,
+      "symbol": "NestedDiff.Element",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 5,
+      "symbol": "NestedDiff.Element.deleteSection",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 6,
+      "symbol": "NestedDiff.Element.insertSection",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 7,
+      "symbol": "NestedDiff.Element.deleteRow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 8,
+      "symbol": "NestedDiff.Element.insertRow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 20,
+      "symbol": "NestedDiff.elements",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 28,
+      "symbol": "Collection.nestedDiff(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 42,
+      "symbol": "Collection.nestedDiff(to:isEqualSection:isEqualElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 100,
+      "symbol": "Collection.nestedDiff(to:isEqualSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wczekalski/Documents/Work/Diff.swift/Sources/NestedDiff.swift",
+      "line": 116,
+      "symbol": "Collection.nestedDiff(to:isEqualElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
