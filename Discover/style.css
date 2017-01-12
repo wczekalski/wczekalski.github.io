@@ -42,16 +42,18 @@ p, h1, h2, span {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 20pt;
     color: #268EFE;
 }
 
 .leestHeader {
     padding-left: 0.5em;
+    font-size: 45pt;
 }
 
 h2 {
-    font-weight: 800
+    font-weight: 800;
+    font-size: 19pt;
 }
 
 .contact-button {
@@ -128,7 +130,7 @@ p {
         padding-left: 0px;
         vertical-align: center;
     }
-    
+
     h2 {
         padding-bottom: 10vh;
     }
