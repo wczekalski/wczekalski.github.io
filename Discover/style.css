@@ -43,7 +43,6 @@ p, h1, h2, span {
 }
 
 h1 {
-    font-size: 20pt;
     color: #268EFE;
 }
 
@@ -54,7 +53,7 @@ h1 {
 
 h2 {
     font-weight: 800;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .contact-button {
@@ -111,7 +110,6 @@ p {
     .container {
         padding-left: 5vw;
         padding-right: 5vw;
-        height: 220pt;
     }
 
     .logoContainer {
@@ -133,10 +131,12 @@ p {
     .leestHeader {
         padding-left: 0px;
         vertical-align: center;
+        padding-top: 35px;
     }
 
     h2 {
-        padding-bottom: 10vh;
+        padding-top: 35px;
+        padding-bottom:35px;
     }
 }
 
